@@ -23,8 +23,8 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
   set(PROJECT_WORKING_DIR     ${CMAKE_HOME_DIRECTORY})
 
   # Lib and exe output paths
-  set( EXECUTABLE_OUTPUT_PATH ${PROJECT_BIN_DIR} )
-  set( BINARY_OUTPUT_PATH ${PROJECT_BIN_DIR} )
+  set( EXECUTABLE_OUTPUT_PATH   ${PROJECT_BIN_DIR} )
+  set( BINARY_OUTPUT_PATH       ${PROJECT_BIN_DIR} )
 
   # Externals
   include(cmake/externals.txt)
