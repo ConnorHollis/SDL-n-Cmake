@@ -1,7 +1,7 @@
-include(ExternalProject)
-include(FetchContent)
+include( ExternalProject )
+include( FetchContent )
 
-set(FETCHCONTENT_BASE_DIR ${PROJECT_EXTERNALS_DIR})
+set( FETCHCONTENT_BASE_DIR ${PROJECT_EXTERNALS_DIR} )
 
 FetchContent_Declare(
   SDL
@@ -10,9 +10,9 @@ FetchContent_Declare(
   SOURCE_DIR      ${PROJECT_EXTERNALS_DIR}/SDL2
 )
 
-FetchContent_MakeAvailable(SDL)
+FetchContent_MakeAvailable( SDL )
 
-SET_PROPERTY(TARGET SDL2        PROPERTY FOLDER "ExternalProjectTargets")
-SET_PROPERTY(TARGET SDL2main    PROPERTY FOLDER "ExternalProjectTargets")
-SET_PROPERTY(TARGET SDL2-static PROPERTY FOLDER "ExternalProjectTargets")
-SET_PROPERTY(TARGET uninstall   PROPERTY FOLDER "ExternalProjectTargets")
+set_property( TARGET SDL2        PROPERTY FOLDER "ExternalProjectTargets" )
+set_property( TARGET SDL2main    PROPERTY FOLDER "ExternalProjectTargets" )
+set_property( TARGET SDL2-static PROPERTY FOLDER "ExternalProjectTargets" )
+set_property( TARGET uninstall   PROPERTY FOLDER "ExternalProjectTargets" )
