@@ -1,0 +1,18 @@
+include(ExternalProject)
+include(FetchContent)
+
+set(FETCHCONTENT_BASE_DIR ${PROJECT_EXTERNALS_DIR})
+
+FetchContent_Declare(
+  SDL
+  GIT_REPOSITORY  https://github.com/libsdl-org/SDL
+  GIT_TAG         release-2.0.18
+  SOURCE_DIR      ${PROJECT_EXTERNALS_DIR}/external/SDL2
+)
+
+FetchContent_MakeAvailable(SDL)
+
+SET_PROPERTY(TARGET SDL2        PROPERTY FOLDER "ExternalProjectTargets")
+SET_PROPERTY(TARGET SDL2main    PROPERTY FOLDER "ExternalProjectTargets")
+SET_PROPERTY(TARGET SDL2-static PROPERTY FOLDER "ExternalProjectTargets")
+SET_PROPERTY(TARGET uninstall   PROPERTY FOLDER "ExternalProjectTargets")
