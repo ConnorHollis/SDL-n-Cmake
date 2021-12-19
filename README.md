@@ -4,10 +4,14 @@ This is an example repository for a C++ project that depends on SDL2. It will ge
 
 It uses [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html) to retrieve and enable the SDL package. SDL is added as a dependency and will be built as part of your project.
 
+## What does it do?
+
+This project, once compiled, will generate an executable program that opens a window using SDL. This demo project isn't a tool to teach you how to use SDL so the only source file included is main.cpp in the source directory.
+
 ## Requirements
 
-CMake version 3.21 or greater (Why? Because it was the version when I downloaded CMake.)
-VC++/G++ (I'm not sure of a version restriction on this, probably a version from the last decade.)
+- CMake version 3.21 or greater (Why? Because it was the version when I downloaded CMake.)
+- VC++/G++ (I'm not sure of a version restriction on this, probably a version from the last decade.)
 
 ## Running
 
@@ -39,3 +43,4 @@ When running this project on a linux install on a virtual machine I was required
 - libgl1-mesa-glx
 
 I'm not sure if that would be necessary if you are running on a physical machine.
+
