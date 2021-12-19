@@ -6,7 +6,7 @@ It uses [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.h
 
 ## What does it do?
 
-This project, once compiled, will generate an executable program that opens a window using SDL. This demo project isn't a tool to teach you how to use SDL so the only source file included is main.cpp in the source directory.
+This project, once compiled, will generate an executable program that opens a window using SDL. This demo project isn't designed to teach you how to use SDL. There are many more resources online for that!
 
 ## Requirements
 
